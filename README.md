@@ -8,14 +8,14 @@ This is a docker image of the dedicated server for Stardbound, using steam.
 The difference between this docker image and others, is that you do not need to store your steam username, password and either disable steamguard or save a steamguard key. The downside is you need to manually update when needed.
 
 ## Get the image
-`docker pull morgyn/starbound`
+`docker pull islands04/starbound`
 
 ## Run the image
 ```sh
-docker run --name starbound -p 21025:21025 -v /root/starbound:/starbound morgyn/starbound
+docker run --name starbound -p 21025:21025 -v /servers/starbound:/starbound islands04/starbound
 ```
 
-Replace ``/root/starbound`` with where you wish to store your Starbound installation.
+Replace ``/servers/starbound`` with where you wish to store your Starbound installation.
 
 The image contains nothing but the update script and the steamcmd. You will have to first run update.sh to download first
 
