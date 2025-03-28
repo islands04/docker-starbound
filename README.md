@@ -1,4 +1,4 @@
-# morgyn/starbound
+# islands04/starbound
 
 This is a docker image of the dedicated server for Stardbound, using steam.
 
@@ -12,7 +12,7 @@ The difference between this docker image and others, is that you do not need to 
 
 ## Run the image
 ```sh
-docker run --name starbound -p 21025:21025 -v /servers/starbound:/starbound islands04/starbound
+docker run --name starbound-server -p 21025:21025 -v /servers/starbound:/starbound islands04/starbound
 ```
 
 Replace ``/servers/starbound`` with where you wish to store your Starbound installation.
